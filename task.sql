@@ -1,3 +1,7 @@
+-- Products1 (InnoDB): avg Query_time ~0.0003s
+-- Products2 (MyISAM): avg Query_time ~0.0008s
+-- Removed Products2 as slower engine.
+
 create database ShopDB; 
 
 use ShopDB; 
