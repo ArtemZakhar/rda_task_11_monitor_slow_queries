@@ -1,12 +1,5 @@
--- Products1 (InnoDB): avg Query_time ~0.0003s
--- Products2 (MyISAM): avg Query_time ~0.0008s
--- Removed Products2 as slower engine.
-
-create database ShopDB; 
-
-use ShopDB; 
-
--- Create tables 
+CREATE DATABASE ShopDB;
+USE ShopDB;
 
 CREATE TABLE Products1 (
     ID INT AUTO_INCREMENT,
@@ -14,123 +7,64 @@ CREATE TABLE Products1 (
     PRIMARY KEY (ID)
 ) ENGINE=InnoDB;
 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct1'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct2'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct3'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct4'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct5'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct6'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct7'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct8'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct9'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct10'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct11'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct12'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct13'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct14'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct15'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct16'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct17'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct18'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct19'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct20'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct21'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct22'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct23'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct24'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct25'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct26'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct27'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct28'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct29'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct30'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct31'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct32'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct33'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct34'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct35'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct36'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct37'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct38'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct39'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct40'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct41'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct42'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct43'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct44'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct45'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct46'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct47'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct48'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct49'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct50'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct51'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct52'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct53'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct54'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct55'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct56'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct57'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct58'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct59'); 
-INSERT INTO Products1 (Name)
-	VALUES ('AwersomeProduct60'); 
+INSERT INTO Products1 (Name) VALUES
+    ('AwersomeProduct1'),
+    ('AwersomeProduct2'),
+    ('AwersomeProduct3'),
+    ('AwersomeProduct4'),
+    ('AwersomeProduct5'),
+    ('AwersomeProduct6'),
+    ('AwersomeProduct7'),
+    ('AwersomeProduct8'),
+    ('AwersomeProduct9'),
+    ('AwersomeProduct10'),
+    ('AwersomeProduct11'),
+    ('AwersomeProduct12'),
+    ('AwersomeProduct13'),
+    ('AwersomeProduct14'),
+    ('AwersomeProduct15'),
+    ('AwersomeProduct16'),
+    ('AwersomeProduct17'),
+    ('AwersomeProduct18'),
+    ('AwersomeProduct19'),
+    ('AwersomeProduct20'),
+    ('AwersomeProduct21'),
+    ('AwersomeProduct22'),
+    ('AwersomeProduct23'),
+    ('AwersomeProduct24'),
+    ('AwersomeProduct25'),
+    ('AwersomeProduct26'),
+    ('AwersomeProduct27'),
+    ('AwersomeProduct28'),
+    ('AwersomeProduct29'),
+    ('AwersomeProduct30'),
+    ('AwersomeProduct31'),
+    ('AwersomeProduct32'),
+    ('AwersomeProduct33'),
+    ('AwersomeProduct34'),
+    ('AwersomeProduct35'),
+    ('AwersomeProduct36'),
+    ('AwersomeProduct37'),
+    ('AwersomeProduct38'),
+    ('AwersomeProduct39'),
+    ('AwersomeProduct40'),
+    ('AwersomeProduct41'),
+    ('AwersomeProduct42'),
+    ('AwersomeProduct43'),
+    ('AwersomeProduct44'),
+    ('AwersomeProduct45'),
+    ('AwersomeProduct46'),
+    ('AwersomeProduct47'),
+    ('AwersomeProduct48'),
+    ('AwersomeProduct49'),
+    ('AwersomeProduct50'),
+    ('AwersomeProduct51'),
+    ('AwersomeProduct52'),
+    ('AwersomeProduct53'),
+    ('AwersomeProduct54'),
+    ('AwersomeProduct55'),
+    ('AwersomeProduct56'),
+    ('AwersomeProduct57'),
+    ('AwersomeProduct58'),
+    ('AwersomeProduct59'),
+    ('AwersomeProduct60');
